@@ -1,43 +1,12 @@
-/*
-
-@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;400&display=swap');
-
-*/
-
-
-
 @font-face {
   font-family: "Karla";
-  src: url('../fonts/Karla/Karla-VariableFont_wght.ttf') format('truetype');
+  src: url('/fonts/Karla/Karla-VariableFont_wght.ttf') format('truetype');
 }
 
 @font-face {
   font-family: "Fira Code";
-  src: url('../fonts/Fira/FiraCode-VariableFont_wght.ttf') format('truetype');
+  src: url('/fonts/Fira/FiraCode-VariableFont_wght.ttf') format('truetype');
 }
-
-@font-face {
-  font-family: "Hershey";
-  src: url('../fonts/Hershey/AVHersheySimplexMedium.otf') format('opentype');
-}
-
-@font-face {
-  font-family: "Hershey Heavy";
-  src: url('../fonts/Hershey/AVHersheySimplexHeavy.otf') format('opentype');
-}
-
-@font-face {
-  font-family: "Lora";
-  src: url('../fonts/Lora/Lora-VariableFont_wght.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: "Noto";
-  src: url('../fonts/Noto/NotoEmoji-VariableFont_wght.ttf') format('truetype');
-}
-
-
-
 
 html {
   font-smooth: always;
