@@ -1,11 +1,11 @@
 @font-face {
   font-family: "Karla";
-  src: url('/fonts/Karla/Karla-VariableFont_wght.ttf') format('truetype');
+  src: url('/fonts/Karla-VariableFont_wght.ttf') format('truetype');
 }
 
 @font-face {
   font-family: "Fira Code";
-  src: url('/fonts/Fira/FiraCode-VariableFont_wght.ttf') format('truetype');
+  src: url('/fonts/FiraCode-VariableFont_wght.ttf') format('truetype');
 }
 
 html {
