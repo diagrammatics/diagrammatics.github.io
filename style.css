@@ -1,0 +1,450 @@
+/*
+
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;400&display=swap');
+
+*/
+
+
+
+@font-face {
+  font-family: "Karla";
+  src: url('../fonts/Karla/Karla-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: "Fira Code";
+  src: url('../fonts/Fira/FiraCode-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: "Hershey";
+  src: url('../fonts/Hershey/AVHersheySimplexMedium.otf') format('opentype');
+}
+
+@font-face {
+  font-family: "Hershey Heavy";
+  src: url('../fonts/Hershey/AVHersheySimplexHeavy.otf') format('opentype');
+}
+
+@font-face {
+  font-family: "Lora";
+  src: url('../fonts/Lora/Lora-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: "Noto";
+  src: url('../fonts/Noto/NotoEmoji-VariableFont_wght.ttf') format('truetype');
+}
+
+
+
+
+html {
+  font-smooth: always;
+}
+
+   
+  :root{
+     --font-size-body: 22px;
+     --font-size-margin: 18px;
+     --font-face:  Karla; /* Fira Code; Georgia; */
+     --font-face-nonbody:  Karla; /* Fira Code; Georgia; */
+     --heading-weight: 500;
+     --body-width: 35em;
+     --font-size-nav: 16px;
+     --bg-color: #f5f3ef;
+     --nav-width: 0em;
+     --toggle-indent: 1em;
+     --nav-margin-l: 0em;
+     --card-bg-color: #e9e9e9;
+     --font-size-card: 28px;
+  }
+  
+  date {
+    visibility: visible; <!-- none = hidden, visible = visible -->
+  }
+  
+  cite {
+    font-style: normal;
+    visibility: visible;
+  }
+  
+  body{
+    padding-left: 0%;
+    position: static;
+    text-align: left;
+    background-color: var(--bg-color);
+    font-weight: 400;
+    font-family: var(--font-face);
+    font-size: var(--font-size-body);
+    font-smoothing: antialiased;
+    /* font-family: system-ui, -apple-system, Roboto, "Segoe UI", sans-serif; */
+    /* margin-left: 0em; */
+    line-height: 1.5;
+    max-width: var(--body-width);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0px 0px;
+    margin: auto;
+  }
+  
+  p > img {
+  
+    margin-bottom: -1em;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    align-items: center;
+    width: 50vh;
+    height: auto; 
+  }
+  
+  p > video {
+  
+    margin-bottom: -1em;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    align-items: center;
+    width: 640px;
+    height: 480px; 
+  }
+  
+  p > capt {
+    display: block;
+    text-align: center;
+    font-size: smaller;
+    font-style: italic;
+  }
+
+  capt:before {
+    content: "\a";
+    white-space: pre;
+  }
+  
+  @media only screen and (max-width: 600px){
+    body {
+      /* padding-left: 0%; */
+      position: static;
+      text-align: left;
+    }
+    margin {
+      visibility: hidden;
+    }
+  }
+  
+  header {
+    display: flex;
+    align-content: normal;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  nav {
+    font-size: 20px;
+    font-family: var(--font-face-nonbody);
+  }
+  
+  logo {
+      background-color: var(--bg-color);
+      color: var(--font-color);
+      font-family: Karla, bold;
+      font-size: 27.5px;
+      font-weight: 200;
+      letter-spacing: 0.05em;
+      text-decoration: underline solid #000 1px;
+      text-rendering: optimizeLegibility;
+  }
+
+  footer {
+    padding: 10vh;
+  }
+ 
+  
+  a {
+    color: black
+    
+  }
+
+a:link {
+    text-decoration-line: underline #FF0000;
+    text-decoration-style: dashed;
+}
+
+a:hover,a:focus {
+  text-decoration-style: solid;
+}
+
+dt {
+}
+
+blockquote {
+  margin-left: 0em;
+  border-left: 0.15em solid #88888888;
+  padding: 0 1em 0 1em;
+  text-align: justify;
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a {
+  text-decoration: none;
+  color: #333;
+  font-weight: var(--heading-weight);
+}
+
+h1 {
+  text-align: center;
+  font-size: 28px;
+  
+}
+
+h2 {
+  text-align: center;
+  font-size: 24px;
+  font-family: var(--font-face-nonbody);
+}
+
+a.hdr {
+  visibility: hidden;
+}
+
+h1:hover > a.hdr, h2:hover > a.hdr, h3:hover > a.hdr, h4:hover > a.hdr, h5:hover > a.hdr {
+  visibility: visible;
+}
+
+ul {
+  list-style-type : '';
+}
+
+
+li {
+  list-style-type : '';
+}
+
+toggle {
+  list-style-type : '';
+  display: block;
+}
+
+toggle li{
+  display: block;
+  position: relative;
+  padding-left: var(--toggle-indent);
+  list-style-type: '';
+}
+
+toggle ul{
+  padding-left: 0;
+  list-style-type: '';
+  display: block;
+}
+
+article {
+    padding: 1em;
+    border: 2px;
+    border-style: solid;
+    border-color: #00000000;
+    margin-left: -1em;
+    margin-bottom: 1em;
+    display: none;
+}
+
+/* DONT TOUCH ANYTHING IN THESE SELECTORS */
+
+article:target {
+    border-width: 2px;
+    margin-left: 0px;
+    display: block; /* for single page view, this needs to be uncommented */
+}
+
+main:target > section > article {
+    max-width: 40em;
+    align-items: center;
+    margin-top: -3em;
+    display: block; /* for single page view, this needs to be uncommented */
+}
+
+section:target > article {
+    max-width: 40em;
+    align-items: center;
+    margin-top: -3em;
+    display: block; /* for single page view, this needs to be uncommented */
+}
+
+article > :first-child {
+    margin-top: -0.4em;
+}
+
+article:before {
+    content: "";
+    display: block;
+    height: -50px; /* adjusts for header after targeting an anchor */
+    padding-top: -50px;
+  }
+
+margin {
+    float: right;
+    clear: right;
+    font-size: var(--font-size-margin);
+    margin-right: -35%;
+    width: 30%;
+    margin-top: 0.1rem;
+    margin-bottom: 0;
+    line-height: 1.1;
+    position: relative;
+    text-justify: none;
+}
+
+q1 {
+    border-radius: 0.3em;
+    background: transparent;
+    background-color: rgba(20, 40, 240, 0.1);
+}
+
+q2 {
+    border-radius: 0.3em;
+    background: transparent;
+    background-color: rgba(170, 50, 170, 0.1);
+ }
+
+q3 {
+    border-radius: 0.3em;
+    background: transparent;
+    background-color: rgba(250, 40, 50, 0.1);
+}
+
+q4 {
+    border-radius: 0.3em;
+    background: transparent;
+    background-color: rgba(20, 250, 40, 0.1);
+}
+
+q5 {
+    border-radius: 0.3em;
+    background: transparent;
+    background-color: rgba(250, 250, 50, 0.2);
+}
+
+code {
+  border: 0px;
+  background-color: #D0D0D4;
+  white-space: pre;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  font-size:1em;
+  font-weight: 400;
+  display: inline-block;
+  font-family: "Fira Code", monospace;
+  overflow: hidden;
+  border-radius: 5px;
+  vertical-align:middle;
+}
+
+code > sub {
+font-size: 0.8em;
+}
+
+code > sup {
+font-size: 0.8em;
+}
+
+/* ic = inline code */
+
+ic {
+  border: 0px;
+  background-color: #D0D0D4;
+  white-space: pre;
+  padding-left: 0.2em;
+  padding-right: 0.2em;
+  font-size:0.85em;
+  font-weight: 400;
+  /* display: inline-block; */
+  font-family: "Fira Code", monospace;
+  overflow: hidden;
+  border-radius: 3px;
+  vertical-align:middle;
+}
+
+foot {
+    position:fixed;
+    bottom:0;
+    left:10px;
+    width:10%;
+    height: 30px;
+    background-color: var(--bg-color);
+}
+
+tag { 
+    background-color: #E0E0E4;    
+    color: black;    
+    padding: 3px 7px;
+    margin-right: 3px;
+    margin-bottom: 1px;     
+    line-height: 2em;      
+    border-radius: 5px;
+}
+
+#routines-table td > a {
+    text-decoration: none;
+}
+
+front {
+  background-color: var(--bg-color);
+  color: var(--font-color);
+  font-family: Karla;
+  font-size: 27px;
+  font-weight: 300;
+  padding-top: 50px;
+  padding-right: 100px;
+  padding-bottom: 50px;
+  padding-left: 100px;
+  max-width: var(--column-size);
+  line-height: 1.25em;
+}
+
+deck {
+    position: relative;
+    width: 25vw;
+}
+
+card {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    margin-right: 2px;
+    margin-bottom: 2em;
+}
+
+card > front,
+card > back {
+    display: block;
+    height: 15vh;
+    width: 22vw;
+    transition-property: transform, opacity;
+    font-family: var(--font-face);
+    font-size: var(--font-size-card);
+    text-align: center;
+    vertical-align: middle;
+    background-size: cover !important;
+    background-position: center !important;
+    padding: 0.5em 0.5em;
+    background: var(--card-bg-color);
+    border-radius: 5px;
+}
+
+card > back {
+    position: absolute;
+    opacity: 0;
+    top: 0px;
+    left: 0px;
+}
+
+card:hover > back {
+    opacity: 1;
+}
+
+a[href^=http]:where(:not([href * ="domain.tld/"])):after {
+    content: "⬈"
+}
+
