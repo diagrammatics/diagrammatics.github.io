@@ -14,10 +14,10 @@ html {
 
    
   :root{
-     --font-size-body: 22px;
-     --font-size-margin: 18px;
-     --font-face:  Karla; /* Fira Code; Georgia; */
-     --font-face-nonbody:  Karla; /* Fira Code; Georgia; */
+     --font-size-body: 16px;
+     --font-size-margin: 12px;
+     --font-face:  Fira Code; /* Fira Code; Georgia; */
+     --font-face-nonbody:  Fira Code; /* Fira Code; Georgia; */
      --heading-weight: 500;
      --body-width: 40em;
      --font-size-nav: 16px;
