@@ -211,6 +211,7 @@ toggle ul{
 
 table {
   border: 1px solid;
+  max-width: 50em;
 }
 
 article {
