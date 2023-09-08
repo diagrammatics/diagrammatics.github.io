@@ -29,7 +29,7 @@ html {
      --font-size-card: 28px;
   }
 
-    #navigation {
+    navigation {
       padding: 0 1em;
       font-size: 18px;
       overflow: auto;
@@ -50,7 +50,7 @@ html {
       display: none;
     }
     
-    #navigation nav ul {
+    navigation nav ul {
       padding-left: 1em;
     }
   
