@@ -20,7 +20,7 @@ html {
      --font-face-nonbody:  Fira Code; /* Fira Code; Georgia; */
      --heading-weight: 500;
      --body-width: 50em;
-     --font-size-nav: 16px;
+     --font-size-nav: 18px;
      --bg-color: #f5f3ef;
      --nav-width: 0em;
      --toggle-indent: 1em;
@@ -112,7 +112,7 @@ html {
   }
 
   nav {
-    font-size: 20px;
+    font-size: var(--font-size-nav);
     font-family: var(--font-face-nonbody);
   }
   
@@ -169,7 +169,7 @@ h1 {
 
 h2 {
   text-align: center;
-  font-size: 24px;
+  font-size: 22px;
   font-family: var(--font-face-nonbody);
 }
 
