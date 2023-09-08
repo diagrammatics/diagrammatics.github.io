@@ -40,7 +40,7 @@ html {
       left:0;
       bottom:0;
       padding: unset;
-      margin-left: -40em;
+      margin-left: -10em;
       overflow: hidden; /* Hide scrollbars */
       scrollbar-width: none;  /* Firefox */
       -ms-overflow-style: none;  /* IE and Edge */
