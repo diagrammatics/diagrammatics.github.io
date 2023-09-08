@@ -218,6 +218,12 @@ article {
     display: none;
 }
 
+sidebar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 /* DONT TOUCH ANYTHING IN THESE SELECTORS */
 
 article:target {
