@@ -28,31 +28,6 @@ html {
      --card-bg-color: #e9e9e9;
      --font-size-card: 28px;
   }
-
-    navigation {
-      padding: 0 1em;
-      font-size: 18px;
-      overflow: auto;
-      width: 20em;
-      height: 100vh;
-      position: fixed;
-      top:0;
-      left:0;
-      bottom:0;
-      padding: unset;
-      margin-left: 0em;
-      overflow: hidden; /* Hide scrollbars */
-      scrollbar-width: none;  /* Firefox */
-      -ms-overflow-style: none;  /* IE and Edge */
-    }
-      
-    navigation::-webkit-scrollbar {
-      display: none;
-    }
-    
-    navigation nav ul {
-      padding-left: 1em;
-    }
   
   date {
     visibility: visible; <!-- none = hidden, visible = visible -->
